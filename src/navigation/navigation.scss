@@ -1,0 +1,22 @@
+@import "../assets/scss/colors.scss";
+$mobile-height: 200px;
+
+header {
+  background-color: $header-color;
+  height: $mobile-height;
+  img {
+    position: relative;
+    &#titleImg {
+      margin-right: 4%;
+      width: 65%;
+      top: 40%;
+      float: right;
+    }
+    &#logoImg {
+      margin-left: 4%;
+      width: 25%;
+      top: 40%;
+      float: left;
+    }
+  }
+}
