@@ -1,22 +1,39 @@
 @import "../assets/scss/colors.scss";
-$mobile-height: 200px;
 
-header {
-  background-color: $header-color;
-  height: $mobile-height;
-  img {
+nav {
+  display: flex;
+  font-family: azhdar-bold, serif;
+  margin: 10px;
+  position: absolute;
+  right: 0;
+  width: 95%;
+  a {
+    background-color: $light-green;
+    border-radius: 15px;
+    box-shadow: 2px 2px 2px $shadow ;
+    color: $shadow;
+    flex-grow: 3.5;
+    font-size: 18px;
+    margin: 0 0 0 3px;
+    padding: 8px 12px 8px 8px;
+    text-align: right;
+    text-decoration: none;
+  }
+  a:hover, a:focus{
+    background-color: #EAAECA;
+  }
+  :first-child {
+    flex-grow: 2;
+  }
+}
+
+@media (min-width: 450px) {
+  nav {
+    display: inline-flex;
+    left: auto;
+    margin: 45px 0 0 0;
     position: relative;
-    &#titleImg {
-      margin-right: 4%;
-      width: 65%;
-      top: 40%;
-      float: right;
-    }
-    &#logoImg {
-      margin-left: 4%;
-      width: 25%;
-      top: 40%;
-      float: left;
-    }
+    right: auto;
+    width: 75%;
   }
 }

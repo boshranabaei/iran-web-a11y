@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+@font-face {
+  font-family: yekan;
+  src: url(assets/fonts/Yekan.ttf);
+}
+
+@font-face {
+  font-family: azhdar;
+  src: url(assets/fonts/Azhdar-Regular.ttf);
+}
+
+@font-face {
+  font-family: azhdar-bold;
+  src: url(assets/fonts/Azhdar-Bold.ttf);
+}
+
+@font-face {
+  font-family: azhdar-heavy;
+  src: url(assets/fonts/Azhdar-Black.ttf);
+}

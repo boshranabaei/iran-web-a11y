@@ -1,16 +1,28 @@
-import './App.scss';
-import homeTitleLogo from '../assets/img/home-title-tr.png';
-import siteLogo from '../assets/img/logo-tr.png'
+import './navigation.scss';
+import '../assets/strings/constantTitles'
+import {
+    NAV_ABOUT_US, NAV_DESIGN, NAV_MORE, NAV_PROGRAMMING, NAV_WHAT, NAV_WGAC,
+} from "../assets/strings/constantTitles";
 
-function App() {
-  return (
-      <>
-          <header>
-              <img id="titleImg" alt="ss" src={homeTitleLogo}/>
-              <img id="logoImg" alt="ss" src={siteLogo}/>
-          </header>
-      </>
-  );
+function Navigation(props) {
+    if(props < 450) {
+        return (
+          <nav tabIndex={-1}>
+              <a href={'#'}>{NAV_MORE}</a>
+              <a href={'#'}>{NAV_DESIGN}</a>
+              <a href={'#'}>{NAV_PROGRAMMING}</a>
+          </nav>
+        )
+    } else {
+        return (
+            <nav tabIndex={-1}>
+                <a href={'#'}>{NAV_ABOUT_US}</a>
+                <a href={'#'}>{NAV_WHAT + " " + NAV_WGAC}</a>
+                <a href={'#'}>{NAV_DESIGN}</a>
+                <a href={'#'}>{NAV_PROGRAMMING}</a>
+            </nav>
+        );
+    }
 }
 
-export default App;
+export default Navigation;
