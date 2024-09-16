@@ -1,0 +1,46 @@
+@import "../assets/scss/colors.scss";
+.homeArts {
+  padding-top: 10px;
+  img {
+    float: right;
+    opacity: 0.60;
+    width: 60px;
+  }
+
+  div {
+    align-items: center;
+    background-color: rgba(51, 170, 51, .2) ;
+    border-radius: 10px;
+    display: flex;
+    height: 75px;
+    justify-content: center;
+    p {
+      font-size: 17px;
+    }
+  }
+  div:focus {
+    border:  3px solid black;
+  }
+}
+.homeArts:nth-of-type(2) {
+  div {
+    background-color:$light-pink;
+  }
+}
+
+.homeArts:nth-of-type(3) {
+  div {
+    background-color:$light-green;
+  }
+}
+
+@media (min-width: 450px) {
+  .homeArts {
+    div {
+      max-width: 95%;
+      p {
+        font-size: 23px;
+      }
+    }
+  }
+}
