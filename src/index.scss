@@ -32,3 +32,12 @@ code {
   font-family: azhdar-heavy;
   src: url(assets/fonts/Azhdar-Black.ttf);
 }
+
+@font-face {
+  font-family: lalezar;
+  src: url(assets/fonts/Digi-Lalezar-Plus.ttf);
+}
+
+.flex-container {
+  display: flex;
+}

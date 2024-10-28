@@ -8,18 +8,21 @@ function Navigation(props) {
     if(props < 450) {
         return (
           <nav tabIndex={-1}>
-              <Link to="/">{NAV_MORE}</Link>
-              <Link to="/">{NAV_DESIGN}</Link>
               <Link to="/">{NAV_PROGRAMMING}</Link>
+              <Link to="/">{NAV_DESIGN}</Link>
+              <Link to="/">
+                  <i className="fa-solid fa-bars" aria-hidden="true" title={NAV_MORE}></i>
+                  <span className="sr-only">{NAV_MORE}</span>
+              </Link>
           </nav>
         )
     } else {
         return (
             <nav tabIndex={-1}>
-                <Link to="/">{NAV_ABOUT_US}</Link>
-                <Link to="/">{NAV_WHAT}</Link>
-                <Link to="/">{NAV_DESIGN}</Link>
                 <Link to="/test">{NAV_PROGRAMMING}</Link>
+                <Link to="/">{NAV_DESIGN}</Link>
+                <Link to="/">{NAV_WHAT}</Link>
+                <Link to="/">{NAV_ABOUT_US}</Link>
             </nav>
         );
     }

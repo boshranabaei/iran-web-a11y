@@ -1,0 +1,48 @@
+@import "../assets/scss/colors.scss";
+$mobile-header-height: 100px;
+$desktop-header-height: 120px;
+
+header {
+  background-color: white;
+  height: $mobile-header-height;
+  img {
+    position: relative;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    &#titleImg {
+      margin-right: 5px;
+      width: 50%;
+    }
+    &#logoImg {
+      margin-right: 15px;
+      width: 15%;
+      float: right;
+    }
+  }
+  a:focus {
+    img {
+      border:  3px solid black;
+    }
+  }
+}
+
+main {
+  display: grid;
+}
+
+
+@media (min-width: 450px) {
+  header {
+    height: $desktop-header-height;
+    img{
+      &#titleImg {
+        max-width: 270px;
+        margin-right: 10px;
+      }
+      &#logoImg {
+        max-width: 75px;
+      }
+    }
+  }
+}

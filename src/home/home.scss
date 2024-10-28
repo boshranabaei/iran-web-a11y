@@ -1,5 +1,4 @@
 @import "../assets/scss/colors.scss";
-$mobile-height: 200px;
 
 @keyframes fadeIn {
   0% { opacity: 0; }
@@ -7,105 +6,69 @@ $mobile-height: 200px;
 }
 
 .fade-in {
-  animation: fadeIn 5s;
+  animation: fadeIn 3s;
 }
 
-header {
-  background-color: $header-gray;
-  height: $mobile-height;
-  img {
+div#main_background {
+  background-image: url(../assets/img/down-s-min.jpg);
+  background-position: 70%;
+  background-size: cover;
+  filter: grayscale(40%) contrast(130%) brightness(95%);
+  opacity: 0.85;
+  height: 100vh;
+  
+  & p {
+    font-family: azhdar-heavy, serif;
+    color: #ebf0bb;
+    background-color: rgba(0, 0, 0, 0.40);;
+    font-size: 27px;
+    padding: 20px;
     position: relative;
-    &#titleImg {
-      margin-right: 4%;
-      width: 63%;
-      top: 40%;
-      float: right;
-    }
-    &#logoImg {
-      margin-left: 4%;
-      width: 23%;
-      top: 40%;
-      float: left;
-    }
-  }
-  a:focus {
-    img {
-      border:  3px solid black;
-    }
-  }
-}
-
-main {
-  margin: 25px;
-  p {
     text-align: center;
-    font-size: 24px;
+    top: 5%;
     &.supreme {
-      font-family: azhdar-heavy, serif;
-    }
-  }
-  #homeDisImgs {
-    padding: 30px 0 50px 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    img {
-      filter: grayscale(100%);
-      min-width: 160px;
-      width: 20%;
-    }
-    img:nth-of-type(2){
-      display: none;
-    }
-    img:nth-of-type(3){
-      filter:grayscale(0%);
+      top: 30%;
+      color: yellow;
     }
   }
 }
 
-video {
-  display: block;
-  max-width: 95%;
-  margin: 30px auto ;
+div.checklist {
+  border: 2px solid $shadow;
+  border-radius: 10px;
+  font-size: 170%;
+  padding: 25px 20px 25px 20px;
+  margin: 15px 10px 15px 10px;
+  & i {
+    margin-left: 11px;
+  }
+}
+
+.flex-container {
+  flex-direction:column;
 }
 
 @media (min-width: 450px) {
-  header {
-    text-align: center;
-    img{
-      &#titleImg, &#logoImg{
-        display: inline-block;
-        float: none;
-        margin-right: auto;
-        margin-left: auto;
-      }
-      &#titleImg {
-        top: 5%;
-        max-width: 270px;
-        padding-right: 20px;
-      }
-      &#logoImg {
-        top: 10%;
-        max-width: 120px;
+  div#main_background {
+    background-position: center;
+    & p {
+      font-size: 45px;
+      top: 15%;
+      &.supreme {
+        top: 40%;
       }
     }
   }
-  main {
-    margin: 50px;
-    #homeDisImgs {
-      img:nth-of-type(2){
-        display: inline;
-      }
-    }
-    #home__articles {
-      display: inline-block;
-      width: 52%;
-    }
-    video {
-      float:left;
-      width: 40%;
-      margin: 0;
-      padding-top: 10px;
-    }
+
+  div.checklist {
+    float: left;
+    width: 30%;
+    font-size: 230%;
+  }
+
+  .flex-container {
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
   }
 }
