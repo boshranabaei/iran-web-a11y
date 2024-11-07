@@ -16,7 +16,7 @@ div#main_background {
   filter: grayscale(40%) contrast(130%) brightness(95%);
   opacity: 0.85;
   height: 100vh;
-  
+  margin-bottom: 30px;
   & p {
     font-family: azhdar-heavy, serif;
     color: #ebf0bb;
@@ -38,14 +38,17 @@ a.checklist {
   border-radius: 10px;
   color: black;
   text-decoration: none;
-  font-size: 170%;
+  font-size: 150%;
   padding: 25px 20px 25px 20px;
-  margin: 15px 10px 15px 10px;
+  margin: 15px 20px 15px 20px;
   &:focus {
     border:  5px solid red;
   }
   & i {
     margin-left: 11px;
+  }
+  &:hover {
+    background-color: $light-gray;
   }
 }
 
@@ -53,13 +56,25 @@ a.checklist {
   flex-direction:column;
 }
 
+.main_p {
+  direction: ltr;
+  font-family: azhdar, serif;
+  font-size: 28px;
+  margin: 25px;
+  text-align: center;
+  &:last-of-type {
+    font-size: 20px;
+    direction: rtl;
+  }
+}
+
 .home-summary {
-  margin-bottom: 20px;
+  margin: 20px 0 10px 0;
   img, div {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 60%;
+    width: 50%;
   } 
   div {
     display: block;
@@ -91,7 +106,28 @@ a.checklist {
 
   .flex-container {
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     text-align: center;
+    margin: 60px 0 60px 0;
+  }
+
+  .main_p {
+    font-size: 43px;
+    &:last-of-type {
+      font-size: 33px;
+    }
+  }
+
+  .home-summary {
+    flex-basis: 25%;
+    float:right;
+    img, div {
+      width: 60%;
+    } 
+    div {
+      font-size: 28px;
+      margin-top: 20px;
+    }
   }
 }
