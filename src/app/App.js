@@ -1,9 +1,10 @@
 import './App.scss';
 import {Routes, Route, Link} from "react-router-dom";
-import Home from "../home/home";
 import homeTitleLogo from "../assets/img/home-title-tr.png";
 import siteLogo from "../assets/img/logo-tr.png";
+import Home from "../home/home";
 import Programing from "../programing/programing";
+import Design from "../design/design";
 
 function App() {
     return(
@@ -19,7 +20,8 @@ function App() {
                 {
                     <Routes>
                         <Route path="/" element={<Home/>}></Route>
-                        <Route path="/test" element={<Programing/>}> </Route>
+                        <Route path="/design" element={<Design/>}></Route>
+                        <Route path="/programming" element={<Programing/>}> </Route>
                     </Routes>
                 }
             </main>

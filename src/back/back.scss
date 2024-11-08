@@ -1,0 +1,17 @@
+@import "../assets/scss/colors.scss";
+
+#return {
+    border: 2.5px solid $green;
+    border-radius: 27px;
+    color: $green;
+    font-family: azhdar-heavy, serif;
+    font-size: 20px;
+    margin: 10px 30px 10px 30px;
+    padding: 7px;
+    text-align: center;
+    text-decoration: none;
+    &:hover {
+        background-color: $green;
+        color: white;
+    }
+}

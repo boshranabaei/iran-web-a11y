@@ -3,9 +3,10 @@ import './programing.scss';
 function Programing() {
     return (
       <>
-          Soosis
+          Programming
       </>
     );
 }
 
 export default Programing;
+

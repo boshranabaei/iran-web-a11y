@@ -42,13 +42,15 @@ function Home() {
         </div>
 
         <div className="flex-container">
-          <a href="/" className="checklist"><i className="fa-solid fa-list-check"></i>{CHECKLIST_DESIGN}</a>
-          <a href="/" className="checklist"><i className="fa-solid fa-list-check"></i>{CHECKLIST_PROGRAMMING}</a>
+          <a href="/design" className="checklist"><i className="fa-solid fa-list-check"></i>{CHECKLIST_DESIGN}</a>
+          <a href="/programming" className="checklist"><i className="fa-solid fa-list-check"></i>{CHECKLIST_PROGRAMMING}</a>
         </div>
-          {/* <video controls autoPlay muted loop>
+          {/* 
+          <video controls autoPlay muted loop>
               <source src={tabVideo} type="video/mp4"/>
               {VIDEO_NO_SUPPORT}
-          </video> */}
+          </video>
+          */}
       </>
     );
 }
