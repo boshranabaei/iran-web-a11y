@@ -1,5 +1,10 @@
 module.exports = {
     BACK:'بازگشت',
+    CHECKLIST_DESIGN : 'چک لیست طراحان',
+    CHECKLIST_PROGRAMMING : 'چک لیست برنامه نویسان',
+    CHECKLIST_RIGHT: 'درست',
+    CHECKLIST_WRONG: 'نادرست',
+    DESIGN_TITLE: 'تسهیلگری طراحی وبسایت',
     HOME_P1_1: 'ما طراحان و برنامه نویسانی هستیم که برای "همه" سایت و اپلیکیشن می سازیم.',
     HOME_P1_2:'حتی با تفاوت ها و محدودیت های جسمی/ ذهنی',
     HOME_P2_1:'Small change, BIG impact...',
@@ -8,8 +13,6 @@ module.exports = {
     HOME_S2:'خوانایی برای Screen Reader',
     HOME_S3:'استفاده درست از تگ های HTML در ساختار وبسایت',
     HOME_S4:'کاربرد به جا از برچسب ها و پیغام های خطا در فرم',
-    CHECKLIST_PROGRAMMING : 'چک لیست برنامه نویسان',
-    CHECKLIST_DESIGN : 'چک لیست طراحان',
     NAV_WHAT: 'WGAT چیست ؟',
     VIDEO_NO_SUPPORT:'مرورگر شما قابلیت نمایش این ویدیو را ندارد'
 }

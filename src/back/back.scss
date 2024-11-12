@@ -1,11 +1,11 @@
 @import "../assets/scss/colors.scss";
 
 #return {
-    border: 2.5px solid $green;
+    border: 2px solid $green;
     border-radius: 27px;
     color: $green;
     font-family: azhdar-heavy, serif;
-    font-size: 20px;
+    font-size: 17px;
     margin: 10px 30px 10px 30px;
     padding: 7px;
     text-align: center;
@@ -13,5 +13,19 @@
     &:hover {
         background-color: $green;
         color: white;
+    }
+    &:focus{
+        border:  5px solid red;
+    }
+}
+
+@media (min-width: 450px) {
+    #return {
+        border: 2.5px solid $green;
+        font-size: 22px;
+        left: 0;
+        margin: 10px 30px 10px 30px;
+        position: absolute;
+        width: 20%;
     }
 }

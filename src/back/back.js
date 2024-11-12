@@ -5,7 +5,7 @@ function Back() {
     return (
       <>
           
-          <a href="s" id="return" className='fade-in'>{BACK}</a>
+          <a href="/" id="return">{BACK}</a>
       </>
     );
 }
