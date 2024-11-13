@@ -6,14 +6,80 @@ h1 {
     text-align: center;
 }
 h2 {
-    font-size: 23px;
-    margin: 0px 18px;
+    background-color: $blue;
+    border: 4px solid #176192;
+    color: white;
+    font-size: 5vw;
+    font-family: Nazanin, serif;
+    margin: 0px 15px;
+    padding: 5px;
+}
+
+.design-p1 {
+    font-size: 18px;
+    margin: 0px 20px 15px 20px;
+    text-align: justify;
+}
+
+#limit {
+    font-family: yekan, serif;
+    font-weight: bold;
+    margin-right: 10px;
+    margin-bottom: 15px;
 }
 
 .design-item {
-    border: 2px solid $gray;
-    border-radius: 10px;
-    padding: 10px;
-    margin: 10px 15px 20px 15px;
+    border: 2px solid $blue;
+    font-size: 18px;
+    line-height: 1.5;
+    padding: 0px 7px;
+    margin: 0px 15px 35px 15px;
+    text-align: justify;
+    p {
+        margin: 17px;
+    }
+    i {
+        margin-left: 5px;
+    }
+    .wrongExp div {
+        color: red;
+        margin-right: 10px;
+    }
+    .wrongExp hr {
+        background-color: red;
+        border: none;
+        height: 1px;
+    }
+    .rightExp div {
+        color: green;
+        margin-right: 10px;
+    }
+    .rightExp hr {
+        background-color: green;
+        border: none;
+        height: 1px;
+    }
+    .link {
+        margin: 25px 10px 20px 0px;
+        font-family: yekan, serif;
+        font-weight: bold;
+        a {
+            font-family: nazanin, serif;
+            font-size: 15px;
+            display: block;
+            margin-top: 10px;
+        }
+    }
 
+}
+/*contrast*/
+.design-item:nth-of-type(1) {
+    .wrongExp p{ 
+        color: #7878E8;
+        background-color: #E3E3E3;
+    }
+    .rightExp p{ 
+        color: #3F3FDE;
+        background-color: #F0F0F0;
+    }
 }

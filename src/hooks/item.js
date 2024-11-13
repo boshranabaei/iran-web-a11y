@@ -1,7 +1,9 @@
 export const Item = 
-    (title, content, right, wrong) => { return { 
+    (title, content, usage, wrong, right, links) => { return { 
         content: content,
+        links: links,
         right: right,
         title: title, 
-        wrong: wrong
+        wrong: wrong,
+        usage: usage
      } }
