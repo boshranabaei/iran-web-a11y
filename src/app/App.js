@@ -1,18 +1,19 @@
 import './App.scss';
 import {Routes, Route, Link} from "react-router-dom";
-import homeTitleLogo from "../assets/img/home-title-tr.png";
-import siteLogo from "../assets/img/logo-tr.png";
 import Home from "../home/home";
 import Programing from "../programing/programing";
 import Design from "../design/design";
 
 function App() {
+    const titleImg = `${process.env.PUBLIC_URL}/assets/img/home-title-tr.png`;
+    const logoImg = `${process.env.PUBLIC_URL}/assets/img/logo-tr.png`;
+
     return(
         <>
             <header>
                 <Link to='/'>
-                    <img id="titleImg" alt="ss" src={homeTitleLogo}/>
-                    <img id="logoImg" alt="ss" src={siteLogo}/>
+                    <img id="titleImg" alt="ss" src={titleImg}/>
+                    <img id="logoImg" alt="ss" src={logoImg}/>
                 </Link>
                 <br/>
             </header>

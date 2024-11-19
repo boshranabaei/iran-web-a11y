@@ -1,9 +1,10 @@
 export const Item = 
-    (title, content, usage, wrong, right, links) => { return { 
-        content: content,
-        links: links,
-        right: right,
-        title: title, 
-        wrong: wrong,
-        usage: usage
+    (item) => { 
+        return { 
+        content: item.CONTENT,
+        links: item.LINKS,
+        right: item.RIGHT,
+        title: item.TITLE, 
+        wrong: item.WRONG,
+        usage: item.USAGE
      } }

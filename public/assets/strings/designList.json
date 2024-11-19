@@ -1,0 +1,52 @@
+{
+    "CHECKLIST_RIGHT": "درست",
+    "CHECKLIST_WRONG": "نادرست",
+    "LIMIT": "محدودیت کاربری: ",
+    "USEFUL_LINKS": "لینک های مفید: ",
+    "DESIGN_LIST" :[
+        {
+        "TITLE": "کنتراست کافی بین پیش زمینه و پس زمینه",
+        "CONTENT": "این قانون به تمامی متون نظیر نوشته های روی عکس ها، دکمه ها و پشت زمینه اطلاق می شود.  میزان کنتراست (Contrast ratio) باید حداقل  4.5:1 باشد.",
+        "USAGE": "بینایی ضعیف تر",
+        "WRONG":{
+            "CONTENT": "کنتراست ضعیف برابر با ۲.۹",
+            "IMG": "../assets/img/design-contrast-wrong.png",
+            "IMG_ALT": "تصویر یک پنجره که روی آن نوشته هایی با کنتراست رنگی کم وجود دارد و خوب دیده نمی شود",
+            "IMG_CPT": "نوشته بر روی تصویر با کنترات کم"
+        },
+        "RIGHT":{
+            "CONTENT": "کنتراست مناسب برابر با ۶.۱۸",
+            "IMG": "../assets/img/design-contrast-right.png",
+            "IMG_ALT": "تصویر یک پنجره که روی آن نوشته هایی با هایلایت روشن وجود دارد و خوب دیده می شود",
+            "IMG_CPT": "قرار دادن پس زمینه شفاف برای ایجاد کنتراست مناسب"
+        },
+        "LINKS": [
+            { "TITLE": " سایت Contrast Checker ", "URL": "https://webaim.org/resources/contrastchecker/" },
+            { "TITLE": "قانون کنتراست WCAG سطح AA", "URL": "https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html"},
+            { "TITLE": "راهکارهاس ایجاد کنتراست برای متن روی عکس", "URL": "https://www.smashingmagazine.com/2023/08/designing-accessible-text-over-images-part1/#:~:text=Add%20a%20semi%2Dtransparent%20black,of%20contrast%20against%20the%20background!"}
+            ]
+        },
+        {
+        "TITLE": "sdsasssssssssssssssssssssssss",
+        "CONTENT": "این قانون به تمامی متون نظیر نوشته های روی عکس ها، دکمه ها و پشت زمینه اطلاق می شود.  میزان کنتراست (Contrast ratio) باید حداقل  4.5:1 باشد.",
+        "USAGE": "بینایی ضعیف تر",
+        "WRONG":{
+            "CONTENT": "کنتراست ضعیف برابر با ۲.۹",
+            "IMG": "../assets/img/design-contrast-wrong.png",
+            "IMG_ALT": "تصویر یک پنجره که روی آن نوشته هایی با کنتراست رنگی کم وجود دارد و خوب دیده نمی شود",
+            "IMG_CPT": "نوشته بر روی تصویر با کنترات کم"
+        },
+        "RIGHT":{
+            "CONTENT": "کنتراست مناسب برابر با ۶.۱۸",
+            "IMG": "../assets/img/design-contrast-right.png",
+            "IMG_ALT": "تصویر یک پنجره که روی آن نوشته هایی با هایلایت روشن وجود دارد و خوب دیده می شود",
+            "IMG_CPT": "قرار دادن پس زمینه شفاف برای ایجاد کنتراست مناسب"
+        },
+        "LINKS": [
+            { "TITLE": " سایت Contrast Checker ", "URL": "https://webaim.org/resources/contrastchecker/" },
+            { "TITLE": "قانون کنتراست WCAG سطح AA", "URL": "https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html"},
+            { "TITLE": "راهکارهاس ایجاد کنتراست برای متن روی عکس", "URL": "https://www.smashingmagazine.com/2023/08/designing-accessible-text-over-images-part1/#:~:text=Add%20a%20semi%2Dtransparent%20black,of%20contrast%20against%20the%20background!"}
+            ]
+        }
+    ]
+}

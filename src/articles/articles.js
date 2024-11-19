@@ -1,28 +1,39 @@
 import './articles.scss';
-import {
-    HOME_AR_TITLE1,HOME_AR_TITLE2
-} from "../assets/strings/constantTitles";
-import bulb from "../assets/img/bulb.png";
+import { useState, useEffect } from "react";
 
 function Articles() {
-        return (
-            <>
-                <div className='homeArts' role='link' tabIndex={0}>
-                    <img src={bulb} alt=""/>
-                    <div><p>{HOME_AR_TITLE1}</p></div>
-                </div>
+    const [strings, setStrings] = useState({});
 
-                <div className='homeArts' role='link' tabIndex={0}>
-                    <img src={bulb} alt=""/>
-                    <div><p>{HOME_AR_TITLE2}</p></div>
-                </div>
+    useEffect(() => {
+        fetch(`${process.env.PUBLIC_URL}/assets/strings/constantTitles.json`)
+        .then((response) => response.json())
+        .then((data) => {
+            setStrings(data);
+        })
+        .catch((error) => console.error('Error fetching the string JSON:', error));
+    }, []);
 
-                <div className='homeArts' role='link' tabIndex={0}>
-                    <img src={bulb} alt=""/>
-                    <div><p>kjhskdhskdhsk</p></div>
-                </div>
-            </>
-        );
+    const HOME_AR_TITLE1 = strings.HOME_AR_TITLE1;
+    const HOME_AR_TITLE2 = strings.HOME_AR_TITLE2;
+
+    return (
+        <>
+            <div className='homeArts' role='link' tabIndex={0}>
+                <img src={`${process.env.REACT_APP_ASSET_BASE_URL}/assets/img/bulb.png`} alt=""/>
+                <div><p>{HOME_AR_TITLE1}</p></div>
+            </div>
+
+            <div className='homeArts' role='link' tabIndex={0}>
+                <img src={`${process.env.REACT_APP_ASSET_BASE_URL}/assets/img/bulb.png`} alt=""/>
+                <div><p>{HOME_AR_TITLE2}</p></div>
+            </div>
+
+            <div className='homeArts' role='link' tabIndex={0}>
+                <img src={`${process.env.REACT_APP_ASSET_BASE_URL}/assets/img/bulb.png`} alt=""/>
+                <div><p>kjhskdhskdhsk</p></div>
+            </div>
+        </>
+    );
 }
 
 export default Articles;

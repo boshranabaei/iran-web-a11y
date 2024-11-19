@@ -1,4 +1,4 @@
-@import "../assets/scss/colors.scss";
+@import "../../public/assets/scss/colors.scss";
 
 @keyframes fadeIn {
   0% { opacity: 0; }
@@ -10,7 +10,7 @@
 }
 
 div#main_background {
-  background-image: url(../assets/img/down-s-min.jpg);
+  background-image: url(../../public/assets/img/down-s-min.jpg);
   background-position: 70%;
   background-size: cover;
   filter: grayscale(40%) contrast(130%) brightness(95%);

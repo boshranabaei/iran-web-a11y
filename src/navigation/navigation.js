@@ -1,7 +1,7 @@
 import './navigation.scss';
 import {
     NAV_ABOUT_US, NAV_DESIGN, NAV_MORE, NAV_PROGRAMMING, NAV_WHAT,
-} from "../assets/strings/constantTitles";
+} from "../../public/assets/strings/constantTitles";
 import {Link} from "react-router-dom";
 
 function Navigation(props) {
