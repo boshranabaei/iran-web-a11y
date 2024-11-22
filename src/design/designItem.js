@@ -7,7 +7,6 @@ function DesignItem(item, designList) {
   if (!item) {
     return null;
   }
-  console.log(item.right.IMG_CPT);
 
     return (
       <>

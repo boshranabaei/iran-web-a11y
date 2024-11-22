@@ -6,16 +6,18 @@
     "cra-template": "1.2.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "react-facebook-login": "^4.1.1",
     "react-router-dom": "^6.26.2",
     "react-scripts": "^5.0.1",
     "redux": "^5.0.1",
     "sass": "^1.77.8"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "react-scripts --openssl-legacy-provider start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "lint": "eslint . --no-cache"
   },
   "eslintConfig": {
     "extends": [
@@ -37,6 +39,7 @@
   },
   "devDependencies": {
     "depcheck": "^1.4.7",
+    "typescript": "^5.6.2",
     "web-vitals": "^4.2.2"
   },
   "engines": {
