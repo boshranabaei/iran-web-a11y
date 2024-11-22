@@ -18,6 +18,8 @@ function DesignItem(item, designList) {
           <div id="limit"><i className="fa-brands fa-accessible-icon"></i>{designList.LIMIT}{item.usage}</div>
           
           <div className='flexContent'>
+          {item.right.CONTENT &&
+            <>
             <div className="wrongExp">
               <div><i className="fa-regular fa-circle-xmark"></i>{designList.CHECKLIST_WRONG}</div>
               <hr/>
@@ -28,6 +30,8 @@ function DesignItem(item, designList) {
               <hr/>
               <p>{item.right.CONTENT}</p>
             </div>
+            </>
+          }
             {item.right.IMG &&
             <>
               <div className="wrongExp">

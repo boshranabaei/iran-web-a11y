@@ -35,6 +35,10 @@ function Design() {
           <h1 className='fade-in'>{strings.DESIGN_TITLE}</h1>
           <p className="design-p1">{strings.DESIGN_P1}</p>
           {items.length > 0 && items.map((item)=> DesignItem(item, designList))}
+          <div className="cnstr">
+            <p>{strings.CONSTRUCTION}</p>
+            <img src="../assets/img/website-construction.png" alt={strings.CONSTRUCTION}></img>
+          </div>
       </>
     );
 }

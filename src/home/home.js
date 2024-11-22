@@ -25,22 +25,22 @@ function Home() {
 
         <div className="flex-container">
           <div className="home-summary">
-            <img src={`/assets/img/home-sum-1.jpg`} alt="sss"/>
+            <img src={`/assets/img/home-sum-1.jpg`} alt={strings.HOME_S1}/>
             <div>{strings.HOME_S1}</div>
           </div>
 
           <div className="home-summary">
-            <img src={`/assets/img/home-sum-2.png`} alt="sss"/>
+            <img src={`/assets/img/home-sum-2.png`} alt={strings.HOME_S2}/>
             <div>{strings.HOME_S2}</div>
           </div>
 
           <div className="home-summary">
-            <img src={`/assets/img/home-sum-3.png`} alt="sss"/>
-            <div>{strings.HOME_S3}</div>
+            <img src={`/assets/img/home-sum-3.png`} alt={strings.HOME_S4}/>
+            <div>{strings.HOME_S4}</div>
           </div>
 
           <div className="home-summary">
-            <img src={`/assets/img/home-sum-4.png`} alt="sss"/>
+            <img src={`/assets/img/home-sum-4.png`} alt={strings.HOME_S4}/>
             <div>{strings.HOME_S4}</div>
           </div>
         </div>

@@ -10,10 +10,15 @@ h2 {
     background-color: $blue;
     border: 4px solid #176192;
     color: white;
+    counter-increment: h2-counter;
     font-size: 5vw;
     font-family: Nazanin, serif;
     margin: 0px 15px;
     padding: 5px;
+}
+
+h2::before {
+    content: counter(h2-counter) ". ";
 }
 
 .design-p1 {
@@ -127,8 +132,16 @@ h2 {
             text-align: right;
         }
         img {
-            width: 35%;
+            width: 65%;
+        }
+        .flexContent {
+            flex-direction: row;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .wrongExp, .rightExp{
+            width: 49%;
         }
     }
-    }
+}
 

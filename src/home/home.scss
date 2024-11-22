@@ -9,6 +9,10 @@
   animation: fadeIn 3s;
 }
 
+body {
+  counter-reset: h2-counter; /* Initialize counter */
+}
+
 div#main_background {
   background-image: url(../../public/assets/img/down-s-min.jpg);
   background-position: 70%;
@@ -83,6 +87,15 @@ a.checklist {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+    width: 70%;
+  }
+}
+
+.cnstr {
+  text-align: center;
+  font-size: 25px;
+  margin: 10px 20px;
+  img{
     width: 70%;
   }
 }
