@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/static/css/main.485f69eb.css",
+    "main.js": "/static/js/main.13ad1eb0.js",
+    "static/js/488.72ed05f9.chunk.js": "/static/js/488.72ed05f9.chunk.js",
+    "static/media/down-s-min.jpg": "/static/media/down-s-min.dabed52379d727c5d93e.jpg",
+    "static/media/Digi-Lalezar-Plus.ttf": "/static/media/Digi-Lalezar-Plus.e7b37bad84e80bfd8145.ttf",
+    "static/media/Yekan.ttf": "/static/media/Yekan.f6a0838b6690eaaa2898.ttf",
+    "static/media/Azhdar-Bold.ttf": "/static/media/Azhdar-Bold.7740265695eb3c80fc5b.ttf",
+    "static/media/Azhdar-Regular.ttf": "/static/media/Azhdar-Regular.57219fe7aa0ac39e198c.ttf",
+    "static/media/Azhdar-Black.ttf": "/static/media/Azhdar-Black.ca9ee37253f5b864d924.ttf",
+    "index.html": "/index.html",
+    "main.485f69eb.css.map": "/static/css/main.485f69eb.css.map",
+    "main.13ad1eb0.js.map": "/static/js/main.13ad1eb0.js.map",
+    "488.72ed05f9.chunk.js.map": "/static/js/488.72ed05f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.485f69eb.css",
+    "static/js/main.13ad1eb0.js"
+  ]
+}

@@ -13,6 +13,12 @@ function Home() {
       .catch((error) => console.error('Error fetching the string JSON:', error));
   }, []);
 
+  useEffect(() => {
+    if(strings){
+      document.title = strings.TITLE_HOME;
+    }
+ }, [strings]);
+
     return (
       <>
         <div id="main_background" className="fade-in">

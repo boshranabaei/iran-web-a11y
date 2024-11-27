@@ -29,6 +29,12 @@ function Design() {
         .catch((error) => console.error('Error fetching the string JSON:', error));
     }, []);
 
+    useEffect(() => {
+      if(strings){
+        document.title = strings.TITLE_DESIGN;
+      }
+   }, [strings]);
+
     return (
       <>
           {Back()}
