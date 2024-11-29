@@ -2,7 +2,7 @@ import './design.scss';
 import { useState, useEffect } from "react";
 import Back from '../back/back';
 import DesignItem from './designItem';
-import {Item} from '../hooks/item';
+import { Item } from '../hooks/item';
 
 function Design() {
     const [strings, setStrings] = useState({});

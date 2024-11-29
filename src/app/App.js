@@ -1,7 +1,7 @@
 import './App.scss';
 import {Routes, Route, Link} from "react-router-dom";
 import Home from "../home/home";
-import Programing from "../programing/programing";
+import Programming from "../programming/programming";
 import Design from "../design/design";
 
 function App() {
@@ -22,7 +22,7 @@ function App() {
                     <Routes>
                         <Route path="/" element={<Home/>}></Route>
                         <Route path="/design" element={<Design/>}></Route>
-                        <Route path="/programming" element={<Programing/>}> </Route>
+                        <Route path="/programming" element={<Programming/>}> </Route>
                     </Routes>
                 }
             </main>
