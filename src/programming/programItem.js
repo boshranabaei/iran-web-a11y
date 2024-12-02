@@ -10,9 +10,9 @@ function ProgramItem(item, programList) {
       <>
         <h2>{item.title}</h2>
         <div className='design-item'>
-          <p>{item.content}</p>
+          <p>{item.content[0]}</p>
 
-          <div id="limit"><i className="fa-brands fa-accessible-icon"></i>{programList.LIMIT}{item.usage}</div>
+          <h3>{item.content[1]}</h3>
           
           <div className='flexContent'>
           {item.right.CONTENT &&
@@ -56,6 +56,7 @@ function ProgramItem(item, programList) {
               ))}
           </div>
         </div>
+        
       </>
     );
 }

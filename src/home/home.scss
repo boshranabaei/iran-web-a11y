@@ -67,6 +67,7 @@ a.checklist {
   font-size: 28px;
   margin: 25px;
   text-align: center;
+  white-space: pre-line;
   &:last-of-type {
     font-size: 20px;
     direction: rtl;

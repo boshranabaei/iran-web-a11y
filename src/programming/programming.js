@@ -1,5 +1,4 @@
 import './programming.scss';
-import Back from '../back/back';
 import { useState, useEffect } from "react";
 import ProgramItem from "./programItem"
 import { Item } from '../hooks/item';
@@ -37,7 +36,6 @@ function Programming() {
 
     return (
       <>
-        {Back()}
         <h1 className='fade-in'>{strings.PROGRAM_TITLE}</h1>
           <p className="design-p1">{strings.PROGRAM_P1}</p>
           {items.length > 0 && items.map((item)=> ProgramItem(item, programList))}
