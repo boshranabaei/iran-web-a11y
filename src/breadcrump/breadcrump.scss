@@ -1,0 +1,27 @@
+@import "../../public/assets/scss/colors.scss";
+
+#breadcrump {
+    direction: rtl;
+    display: block;
+    background: white;
+    font-size: 20px;  
+    position: relative;
+    top: 24px;
+    padding: 20px;
+    width: 100%;
+    a {
+        text-decoration: none;
+        transform: skew(20deg);
+        margin: 0px 10px;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+    &:focus{
+        border:  5px solid red;
+    }
+}
+
+@media (min-width: 450px) {
+
+}

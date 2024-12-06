@@ -52,8 +52,8 @@ function Home() {
         </div>
 
         <div className="flex-container">
-          <a href="/design" className="checklist"><i className="fa-solid fa-list-check"></i>{strings.DESIGN_TITLE}</a>
-          <a href="/programming" className="checklist"><i className="fa-solid fa-list-check"></i>{strings.PROGRAM_TITLE}</a>
+          <a href="/design" className="checklist"><i className="fa-solid fa-list-check"></i>{strings.CHECKLIST_DESIGN}</a>
+          <a href="/programming" className="checklist"><i className="fa-solid fa-list-check"></i>{strings.CHECKLIST_PROGRAMMING}</a>
         </div>
           {/* 
           <video controls autoPlay muted loop>
