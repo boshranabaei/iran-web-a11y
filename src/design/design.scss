@@ -26,6 +26,7 @@ h2::before {
     font-size: 23px;
     margin: 0px 35px 35px 35px;
     text-align: justify;
+    white-space: pre-line;
 }
 
 .design-item {
@@ -34,10 +35,11 @@ h2::before {
     line-height: 1.5;
     padding: 0px 7px;
     margin: 0px 15px 65px 15px;
-    text-align: justify;
+    // text-align: justify;
     white-space: pre-line;
     p {
         margin: 22px;
+        line-height: 33px;
     }
     i {
         margin-left: 5px;
