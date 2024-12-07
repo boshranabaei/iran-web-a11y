@@ -10,12 +10,17 @@
     padding: 20px;
     width: 100%;
     a {
+        border: 2px solid $green;
+        border-radius: 24px;
+        color: $green;
+        margin: 0px 0px;
+        padding: 3px 12px;
         text-decoration: none;
         transform: skew(20deg);
-        margin: 0px 10px;
     }
     a:hover {
-        text-decoration: underline;
+        background-color: $green;
+        color: white;
     }
     &:focus{
         border:  5px solid red;
