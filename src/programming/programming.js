@@ -38,7 +38,7 @@ function Programming() {
       <>
         <h1 className='fade-in'>{strings.PROGRAM_TITLE}</h1>
           <p className="design-p1">{strings.PROGRAM_P1}</p>
-          {items.length > 0 && items.map((item)=> ProgramItem(item, programList))}
+          {items.length > 0 && items.map((item, index)=>  <ProgramItem key={index} item={item} programList={programList} />)}
         <div className="cnstr">
           <p>Check the design section for now</p>
           <p>{strings.CONSTRUCTION}</p>

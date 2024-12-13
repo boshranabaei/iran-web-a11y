@@ -5,36 +5,30 @@
     "PROGRAM_LIST" :[
         {
         "TITLE": "استفاده از ساختار معنایی مناسب",
-        "CONTENT": [
-            " محتوای کد فرانت‌اند شما باید  تا حد امکان با استفاده از تگ‌های معنایی مناسب قالب‌بندی شود. این موضوع از آن جهت اهمیت دارد که ابزارهای مختلف، نظیر screen readerها، برای تسهیل دسترسی کاربران به وب، بر اساس این تگ‌ها طراحی و برنامه‌ریزی شده‌اند..",
-            "تگ های معنایی یا Semantic Element ها چیستند؟",
-            "تگ های معنایی معنای خود را به‌صورت واضح هم برای مرورگر و هم برای برنامه نویس توصیف می‌کنند.\nمثال تگ های معنایی:",
-            "<form> <table> <article>",
-            "مثال تگ های غیر معنایی:",
-            "<div><span>",
-            "در تصویر زیر می توانید یک قالب مناسب وب را که با استفاده از تگ های معنایی ساخته شده ببینید:"
-        ],
+        "CONTENT": {
+            "DETAIL": " محتوای کد فرانت‌اند شما باید  تا حد امکان با استفاده از تگ‌های معنایی مناسب قالب‌بندی شود. این موضوع از آن جهت اهمیت دارد که ابزارهای مختلف، نظیر screen readerها، برای تسهیل دسترسی کاربران به وب، بر اساس این تگ‌ها طراحی و برنامه‌ریزی شده‌اند..",
+            "T1": "تگ های معنایی یا Semantic Element ها چیستند؟",
+            "P1": "تگ های معنایی معنای خود را به‌صورت واضح هم برای مرورگر و هم برای برنامه نویس توصیف می‌کنند.\nمثال تگ های معنایی:",
+            "CODE1": "<form> <table> <article>",
+            "P2": "مثال تگ های غیر معنایی:",
+            "CODE2": "<div> <span>",
+            "IMG_REF": "در تصویر زیر می توانید یک قالب مناسب وب را که با استفاده از تگ های معنایی ساخته شده ببینید:"
+        },
         "CONTENT_IMG":{
             "IMG": "../assets/img/program-semantic.svg",
             "IMG_ALT": "تصویر ",
             "IMG_CPT": "قالب بندی صفحه وب با استفاده از تگ های معنایی در جای درست "
         },
         "WRONG":{
-            "CONTENT": "کنتراست ضعیف برابر با ۲.۹",
-            "IMG": "../assets/img/design-contrast-wrong.png",
-            "IMG_ALT": "تصویر یک پنجره که روی آن نوشته هایی با کنتراست رنگی کم وجود دارد و خوب دیده نمی شود",
-            "IMG_CPT": "نوشته بر روی تصویر با کنتراست کم"
+            "CONTENT": "استفاده نابه جا از <div> برای بخش های مختلف صفحه",
+            "CODE":"<div>\n  <h1>Welcome to My Website</h1>\n  <div>\n    <p>This is a paragraph describing my website.</p>\n    <p>Here’s another paragraph.</p>\n  </div>\n  <div>\n    <button>Click Me</button>\n  </div>\n</div>"
         },
         "RIGHT":{
-            "CONTENT": "کنتراست مناسب برابر با ۶.۱۸",
-            "IMG": "../assets/img/design-contrast-right.png",
-            "IMG_ALT": "تصویر یک پنجره که روی آن نوشته هایی با هایلایت روشن وجود دارد و خوب دیده می شود",
-            "IMG_CPT": "قرار دادن پس زمینه شفاف برای ایجاد کنتراست مناسب"
+            "CONTENT": "استفاده مناسب از تگ های معنایی برای قالب بندی صفحه",
+            "CODE": "<header>\n  <h1>Welcome to My Website</h1>\n</header>\n<main>\n  <section>\n    <p>This is a paragraph describing my website.</p>\n    <p>Here’s another paragraph.</p>\n  </section>\n</main>\n<footer>\n  <button>Click Me</button>\n</footer>"
         },
         "LINKS": [
-            { "TITLE": " سایت Contrast Checker ", "URL": "https://webaim.org/resources/contrastchecker/" },
-            { "TITLE": "قانون کنتراست WCAG سطح AA", "URL": "https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html"},
-            { "TITLE": "راهکارهای ایجاد کنتراست برای متن روی عکس", "URL": "https://www.smashingmagazine.com/2023/08/designing-accessible-text-over-images-part1/#:~:text=Add%20a%20semi%2Dtransparent%20black,of%20contrast%20against%20the%20background!"}
+            { "TITLE": " راهنمای کوتاهی برای انتخاب تگ HTML مناسب ", "URL": "https://dev.to/polgarj/a-short-guide-to-help-you-pick-the-correct-html-tag-56l9" }
             ]
         }
     ]

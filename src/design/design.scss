@@ -94,16 +94,21 @@ h2::before {
     img {
         width: 90%;
     }
+    pre, code {
+        width: 80%;
+        white-space: pre-wrap !important; 
+        direction: ltr;
+    }
 }
 
 /*contrast*/
 .design-item:nth-of-type(1) {
-    .wrongExp p{ 
+    .wrongExp p.des{ 
         background-color: #E3E3E3;
         color: #7878E8;
         display: inline;
     }
-    .rightExp p{ 
+    .rightExp p.des{ 
         background-color: #F0F0F0;
         color: #3F3FDE;
         display: inline;
@@ -144,6 +149,12 @@ h2::before {
         }
         img {
             width: 65%;
+        }
+        pre {
+            width: 80%;
+        }
+        img.single {
+            width: 55%;
         }
         .flexContent {
             flex-direction: row;

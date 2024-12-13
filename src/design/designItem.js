@@ -1,8 +1,6 @@
 import './design.scss';
-// import DesignContrastWrong from '../assets/img/design-contrast-wrong.png';
-// import DesignContrastRight from '../assets/img/design-contrast-right.png';
 
-function DesignItem(item, designList) {
+function DesignItem({item, designList}) {
 
   if (!item) {
     return null;
@@ -22,12 +20,12 @@ function DesignItem(item, designList) {
             <div className="wrongExp">
               <div><i className="fa-regular fa-circle-xmark"></i>{designList.CHECKLIST_WRONG}</div>
               <hr/>
-              <p>{item.wrong.CONTENT}</p>
+              <p className="des">{item.wrong.CONTENT}</p>
             </div>
             <div className="rightExp">
               <div><i className="fa-regular fa-circle-check"></i>{designList.CHECKLIST_RIGHT}</div>
               <hr/>
-              <p>{item.right.CONTENT}</p>
+              <p className="des">{item.right.CONTENT}</p>
             </div>
             </>
           }

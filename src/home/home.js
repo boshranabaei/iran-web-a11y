@@ -41,8 +41,8 @@ function Home() {
           </div>
 
           <div className="home-summary">
-            <img src={`/assets/img/home-sum-3.png`} alt={strings.HOME_S4}/>
-            <div>{strings.HOME_S4}</div>
+            <img src={`/assets/img/home-sum-3.png`} alt={strings.HOME_S3}/>
+            <div>{strings.HOME_S3}</div>
           </div>
 
           <div className="home-summary">
