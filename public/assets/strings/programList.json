@@ -30,6 +30,18 @@
         "LINKS": [
             { "TITLE": " راهنمای کوتاهی برای انتخاب تگ HTML مناسب ", "URL": "https://dev.to/polgarj/a-short-guide-to-help-you-pick-the-correct-html-tag-56l9" }
             ]
+        },
+        {
+        "TITLE": "اعلام زبان اصلی صفحه",
+        "CONTENT": {
+            "DETAIL": "زبان اصلی صفحه باید به‌درستی در تگ <html> مشخص شود.",
+            "CODE1": "<html lang='en'>",
+            "P2": "اگر زبان صفحه را مشخص نکنید و اگر screen reader روی زبانی متفاوت تنظیم شده باشد - یا اگر تعیین زبان نادرست باشد - screen reader وب را با قواعد تلفظ اشتباه می‌خواند، که فهمیدن آن تقریباً غیرممکن خواهد بود.\nهمچنین به خاطر داشته باشید تا از کد مناسب برای زبان استفاده کنید. کد ها خلاصه شده هستن. ",
+            "CODE2": "<html lang='fa'>\n<!--This is the Farsi language code-->"
+        },
+        "LINKS": [
+            { "TITLE": "لیست کد های زبان های مختلف", "URL": "https://www.w3schools.com/tags/ref_language_codes.asp" }
+            ]
         }
     ]
 }
