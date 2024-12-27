@@ -1,15 +1,30 @@
+import { useState } from "react";
 import './design.scss';
 
 function DesignItem({item, designList}) {
+
+  const [isVisible, setIsVisible] = useState(false);
 
   if (!item) {
     return null;
   }
 
+  const handleToggle = () => {
+    setIsVisible(!isVisible);
+  };
+
     return (
       <>
-        <h2>{item.title}</h2>
-        <div className='design-item'>
+        <h2>
+          <div>{item.title}</div>
+          <span className="accordion" aria-expanded="false" role="button">
+            <i
+              className={isVisible ? "fa-solid fa-minus" : "fa-solid fa-plus"} 
+              onClick={handleToggle}></i>
+            &nbsp;&nbsp;
+          </span>
+        </h2>
+        <div className='design-item' style={{ display: isVisible ? "block" : "none"}}>
           <p>{item.content}</p>
 
           <div id="limit"><i className="fa-brands fa-accessible-icon"></i>{designList.LIMIT}{item.usage}</div>

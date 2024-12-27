@@ -8,7 +8,7 @@
         "CONTENT": {
             "DETAIL": " محتوای کد فرانت‌اند شما باید  تا حد امکان با استفاده از تگ‌های معنایی مناسب قالب‌بندی شود. این موضوع از آن جهت اهمیت دارد که ابزارهای مختلف، نظیر screen readerها، برای تسهیل دسترسی کاربران به وب، بر اساس این تگ‌ها طراحی و برنامه‌ریزی شده‌اند..",
             "T1": "تگ های معنایی یا Semantic Element ها چیستند؟",
-            "P1": "تگ های معنایی معنای خود را به‌صورت واضح هم برای مرورگر و هم برای برنامه نویس توصیف می‌کنند.\nمثال تگ های معنایی:",
+            "P1": "تگ های معنایی محتوای خود را به‌صورت واضح هم برای مرورگر و هم برای برنامه نویس توصیف می‌کنند.\nمثال تگ های معنایی:",
             "CODE1": "<form> <table> <article>",
             "P2": "مثال تگ های غیر معنایی:",
             "CODE2": "<div> <span>",
@@ -29,6 +29,25 @@
         },
         "LINKS": [
             { "TITLE": " راهنمای کوتاهی برای انتخاب تگ HTML مناسب ", "URL": "https://dev.to/polgarj/a-short-guide-to-help-you-pick-the-correct-html-tag-56l9" }
+            ]
+        },
+        {
+        "TITLE": "تعیین نقاط راهنما یا landmark ها",
+        "CONTENT": {
+            "DETAIL": "کاربری که از بینایی سالمی برخوردار نباشد و یا دستان او به هر دلیلی قادر به استفاده از ماوس نباشد، برای گشت و گذار در وب سایت شما از دکمه های Tab و Enter در کیبورد استفاده می کند. دکمه Tab به نوبت روی نقاط راهنمای تمرکز (focus) می کند و کلید enter همانند کلیک عمل می نماید.",
+            "T1": "نقاط راهنما را چطور مشخص کنیم؟",
+            "P1": "اگر در تمام وب سایت از تگ های درست معنایی استفاده نمایید، screen reader ها و کلید Tab به درستی روی نقاط مختلف گردش خواهند داشت. این را میتوانید در صفحه خانه همین وب سایت تست کنید. مثالی از تعیین نقاط راهنما با استفاده از تگ های معنایی:",
+            "CODE1": "<!-- Semantic HTML (preferred) -->\n\n<header>Website Header</header>\n<nav>Navigation Menu</nav>\n<main>Main Content Area</main>",
+            "P2": "اگر وب سایت شما قالب ریزی شده و تغییر آن هزینه و زمان زیادی می برد، می توانید به راحتی با اضافه کردن یک attribute، نقاط راهنما را مشخص کنید. این attribute از گروه ARIA (Accessible Rich Internet Applications) می باشد و نام آن role است:",
+            "CODE2": "<!-- ARIA Landmarks (if needed) -->\n\n<div role='banner'>Website Header</div>\n<div role='navigation'>Navigation Menu</div>\n<div role='main'>Main Content Area</div>"
+        },
+        "CONTENT_IMG":{
+            "IMG": "../assets/img/program-semantic.svg",
+            "IMG_ALT": "تصویر ",
+            "IMG_CPT": "قالب بندی صفحه وب با استفاده از تگ های معنایی در جای درست "
+        },
+        "LINKS": [
+            { "TITLE": "انواع مختلف role در صفحه وب", "URL": "https://developer.mozilla.org/en-US/blog/aria-accessibility-html-landmark-roles/" }
             ]
         },
         {

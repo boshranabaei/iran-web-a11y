@@ -1,16 +1,33 @@
 import './programming.scss';
+import { useState } from "react";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { dark } from "react-syntax-highlighter/dist/esm/styles/prism";
 
 function ProgramItem({item, programList}) {
+  const [isVisible, setIsVisible] = useState(false);
+  
+  const handleToggle = () => {
+    setIsVisible(!isVisible);
+  };
+
   if (!item) {
     return null;
   }
 
     return (
       <>
-        <h2>{item.title}</h2>
-        <div className='design-item'>
+        <h2>
+          <div>{item.title}</div>
+          <span className="accordion" aria-expanded="false" role="button">
+            <i
+              className={isVisible ? "fa-solid fa-minus" : "fa-solid fa-plus"} 
+              onClick={handleToggle}></i>
+            &nbsp;&nbsp;
+          </span>
+        </h2>
+
+
+        <div className='design-item' style={{ display: isVisible ? "block" : "none"}}>
           <p>{item.content.DETAIL}</p>
 
           {item.content.T1 && <h3>{item.content.T1}</h3>}
