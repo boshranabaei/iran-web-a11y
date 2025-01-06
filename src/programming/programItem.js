@@ -4,10 +4,11 @@ import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { dark } from "react-syntax-highlighter/dist/esm/styles/prism";
 
 function ProgramItem({item, programList}) {
-  const [isVisible, setIsVisible] = useState(false);
+  
+  const [maxHeight, setMaxHeight] = useState(0);
   
   const handleToggle = () => {
-    setIsVisible(!isVisible);
+    setMaxHeight(maxHeight === 0? '5500px': 0);
   };
 
   if (!item) {
@@ -20,14 +21,14 @@ function ProgramItem({item, programList}) {
           <div>{item.title}</div>
           <span className="accordion" aria-expanded="false" role="button">
             <i
-              className={isVisible ? "fa-solid fa-minus" : "fa-solid fa-plus"} 
+              className={maxHeight !== 0  ? "fa-solid fa-minus" : "fa-solid fa-plus"} 
               onClick={handleToggle}></i>
             &nbsp;&nbsp;
           </span>
         </h2>
 
 
-        <div className='design-item' style={{ display: isVisible ? "block" : "none"}}>
+        <div className='design-item' style={{ maxHeight: maxHeight === 0 ? 0 : "5500px"}}>
           <p>{item.content.DETAIL}</p>
 
           {item.content.T1 && <h3>{item.content.T1}</h3>}

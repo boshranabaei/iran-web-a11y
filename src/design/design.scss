@@ -45,12 +45,14 @@ h2 div::before {
 }
 
 .design-item {
-    border: 2px solid $blue;
+    // border: 2px solid $blue;
     font-size: 20px;
     line-height: 1.5;
     padding: 0px 7px 5px 0px;
-    margin: 0px 15px 65px 15px;
-    display: none;
+    margin: 0px 15px 10px 15px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1.0s ease-out;
     white-space: pre-line;
     p {
         margin: 22px;
@@ -149,15 +151,15 @@ h2 div::before {
     h2 {
         font-size: 25px;
         margin: 0px 45px;
-        width: 90%;
+        width: 80vw;
     }
     .design-p1 {
         font-size: 20px;
     }
     .design-item {
         font-size: 18px;
-        width: 90%;
-        margin: 0px 45px 45px 45px;
+        width: 80vw;
+        margin: 0px 45px 10px 45px;
         figure {
             text-align: right;
         }

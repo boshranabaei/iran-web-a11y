@@ -3,14 +3,14 @@ import './design.scss';
 
 function DesignItem({item, designList}) {
 
-  const [isVisible, setIsVisible] = useState(false);
+  const [maxHeight, setMaxHeight] = useState(0);
 
   if (!item) {
     return null;
   }
 
   const handleToggle = () => {
-    setIsVisible(!isVisible);
+    setMaxHeight(maxHeight === 0? '1500px': 0);
   };
 
     return (
@@ -19,11 +19,12 @@ function DesignItem({item, designList}) {
           <div>{item.title}</div>
           <span className="accordion" aria-expanded="false" role="button">
             <i
-              className={isVisible ? "fa-solid fa-minus" : "fa-solid fa-plus"} 
+              className={maxHeight !== 0 ? "fa-solid fa-minus" : "fa-solid fa-plus"} 
               onClick={handleToggle}></i>
+
           </span>
         </h2>
-        <div className='design-item' style={{ display: isVisible ? "block" : "none"}}>
+        <div className='design-item' style={{ maxHeight: maxHeight === 0 ? 0 : "1500px"}}>
           <p>{item.content}</p>
 
           <div id="limit"><i className="fa-brands fa-accessible-icon"></i>{designList.LIMIT}{item.usage}</div>
