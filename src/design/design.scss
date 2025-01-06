@@ -19,10 +19,16 @@ h2 {
     justify-content: space-between;
     margin: 0px 15px;
     padding: 10px 5px;
+    div {
+        width: 80%;
+    }
     .accordion {
         cursor: -webkit-grab;
         cursor: grab;
-        align-self: self-end;
+        align-self: center;
+        text-align: center;
+        width: 10%;
+        padding: 10px 6px;
     }
 }
 
@@ -143,22 +149,19 @@ h2 div::before {
     h2 {
         font-size: 25px;
         margin: 0px 45px;
-        min-width: 90%;
+        width: 90%;
     }
     .design-p1 {
         font-size: 20px;
     }
     .design-item {
         font-size: 18px;
-        min-width: 90%;
+        width: 90%;
         margin: 0px 45px 45px 45px;
         figure {
             text-align: right;
         }
-        img {
-            width: 65%;
-        }
-        pre, code {
+        pre, code, img {
             width: 70%;
         }
         img.single {
@@ -170,7 +173,7 @@ h2 div::before {
             flex-wrap: wrap;
         }
         .wrongExp, .rightExp{
-            width: 49%;
+            width: 45%;
         }
     }
 }

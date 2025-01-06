@@ -21,7 +21,6 @@ function DesignItem({item, designList}) {
             <i
               className={isVisible ? "fa-solid fa-minus" : "fa-solid fa-plus"} 
               onClick={handleToggle}></i>
-            &nbsp;&nbsp;
           </span>
         </h2>
         <div className='design-item' style={{ display: isVisible ? "block" : "none"}}>
