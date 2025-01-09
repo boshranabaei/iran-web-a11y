@@ -61,6 +61,25 @@
         "LINKS": [
             { "TITLE": "لیست کد های زبان های مختلف", "URL": "https://www.w3schools.com/tags/ref_language_codes.asp" }
             ]
+        },
+        {
+        "TITLE": "ارائه معادل نوشتاری برای عکس ها",
+        "CONTENT": {
+            "DETAIL": "افرادی که نابینا هستن به محتوای عکس ها دسترسی ندارند. آن‌ها به screen reader های خود گوش می‌دهند تا متن جایگزینی را که وبسایت برای تصویر ارائه داده است را بخواند. متن جایگزین باید \"قابل فهم\" و \"خلاصه\" باشد.",
+            "T1": "چگونه متن جایگزین را به کد فرانت اند خود اضافه کنیم؟",
+            "P1": "روش استاندارد استفاده از alt در تگ img می باشد.",
+            "CODE1": "<img\n  src=\"images/dinosaur.jpg\"\n  alt=\"The head of a dinosaur skeleton;\n       it has long sharp teeth\" />",
+            "P2": "برای عکس های SVG از aria-label و یا aria-labelledby استفاده می کنیم. این ها attributes های تسهیلگری وب (ARIA - Accessible Rich Internet Applications) هستند تا اطلاعات اضافی لازم برای screen reader ها و دیگر ابزار ها را فراهم سازند. راه دیگر استفاده از تگ <title> در <svg> می باشد.",
+            "CODE2": "<!-- using aria-label -->\n<svg width=\"100\" height=\"100\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"A red circle\">\n  <circle cx=\"50\" cy=\"50\" r=\"40\" fill=\"red\" />\n</svg>\n\n<!-- using title -->\n<svg width=\"100\" height=\"100\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\">\n  <title>A red circle</title>  \n  <circle cx=\"50\" cy=\"50\" r=\"40\" fill=\"red\"/>\n</svg>",
+            "IMG_REF": "اگر تصویر از زیرنویس برخوردار است، دیگر نیازی به استفاده از alt و یا برچسب های ARIA نیست:"
+        },
+        "CONTENT_IMG":{
+            "IMG": "../assets/img/image-caption.png",
+            "IMG_CPT": "استفاده از تگ <figcaption> همراه با عکس در <figure> کافی می باشد "
+        },
+        "LINKS": [
+            { "TITLE": "تسهیلگری svgها", "URL": "https://css-tricks.com/accessible-svgs/" }
+            ]
         }
     ]
 }

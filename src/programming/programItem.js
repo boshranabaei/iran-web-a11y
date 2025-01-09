@@ -17,12 +17,10 @@ function ProgramItem({item, programList}) {
 
     return (
       <>
-        <h2>
+        <h2 onClick={handleToggle}>
           <div>{item.title}</div>
           <span className="accordion" aria-expanded="false" role="button">
-            <i
-              className={maxHeight !== 0  ? "fa-solid fa-minus" : "fa-solid fa-plus"} 
-              onClick={handleToggle}></i>
+            <i className={maxHeight !== 0  ? "fa-solid fa-minus" : "fa-solid fa-plus"}></i>
             &nbsp;&nbsp;
           </span>
         </h2>
@@ -57,11 +55,6 @@ function ProgramItem({item, programList}) {
             </figure>
             </>
           }
-          <div className='link'><i className="fa-solid fa-link"></i>{programList.USEFUL_LINKS}
-            {item.links?.map((link, index) => (
-              <a key={index} href={link.URL}>{link.TITLE}</a>
-              ))}
-          </div>
           {item.right &&
             <>
             <div className='flexContent'>
@@ -84,6 +77,11 @@ function ProgramItem({item, programList}) {
             </div>
             </>
           }
+          <div className='link'><i className="fa-solid fa-link"></i>{programList.USEFUL_LINKS}
+            {item.links?.map((link, index) => (
+              <a key={index} href={link.URL}>{link.TITLE}</a>
+              ))}
+          </div>
         </div>
       </>
     );

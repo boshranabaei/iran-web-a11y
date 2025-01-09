@@ -15,12 +15,10 @@ function DesignItem({item, designList}) {
 
     return (
       <>
-        <h2>
+        <h2 onClick={handleToggle}>
           <div>{item.title}</div>
           <span className="accordion" aria-expanded="false" role="button">
-            <i
-              className={maxHeight !== 0 ? "fa-solid fa-minus" : "fa-solid fa-plus"} 
-              onClick={handleToggle}></i>
+            <i className={maxHeight !== 0 ? "fa-solid fa-minus" : "fa-solid fa-plus"}></i>
 
           </span>
         </h2>

@@ -12,6 +12,8 @@ h2 {
     border-bottom: 4px solid white;
     color: white;
     counter-increment: h2-counter;
+    cursor: -webkit-grab;
+    cursor: grab;
     display: flex;
     font-size: 5vw;
     font-family: Nazanin, serif;
@@ -23,8 +25,6 @@ h2 {
         width: 80%;
     }
     .accordion {
-        cursor: -webkit-grab;
-        cursor: grab;
         align-self: center;
         text-align: center;
         width: 10%;
@@ -90,6 +90,7 @@ h2 div::before {
     .link {
         margin: 25px 10px 20px 10px;
         font-family: yekan, serif;
+        font-size: 22px;
         font-weight: bold;
         a {
             // font-family: nazanin, serif;
