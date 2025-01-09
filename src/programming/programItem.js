@@ -49,6 +49,10 @@ function ProgramItem({item, programList}) {
           {item.content.IMG_REF && 
             <>
             <p>{item.content.IMG_REF}</p>
+            </>
+          }
+          {item.contentImage && 
+            <>
             <figure>
               <img className="single" src={`${item.contentImage.IMG}`} alt={item.contentImage.IMG_ALT}></img>
               <figcaption>{item.contentImage.IMG_CPT}</figcaption>
