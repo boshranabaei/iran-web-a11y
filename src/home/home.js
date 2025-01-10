@@ -55,12 +55,13 @@ function Home() {
           <a href="/design" className="checklist"><i className="fa-solid fa-list-check"></i>{strings.CHECKLIST_DESIGN}</a>
           <a href="/programming" className="checklist"><i className="fa-solid fa-list-check"></i>{strings.CHECKLIST_PROGRAMMING}</a>
         </div>
-          {/* 
-          <video controls autoPlay muted loop>
-              <source src={tabVideo} type="video/mp4"/>
-              {VIDEO_NO_SUPPORT}
-          </video>
-          */}
+
+        <p className="main_p">{strings.HOME_V1_1}</p>
+
+        <video controls autoPlay muted loop>
+          <source src={'/assets/video/tab-nav-movie.mp4'} type="video/mp4"/>
+          {strings.VIDEO_NO_SUPPORT}
+        </video>
       </>
     );
 }

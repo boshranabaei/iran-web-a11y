@@ -62,15 +62,23 @@ a.checklist {
 }
 
 .main_p {
-  direction: ltr;
-  font-family: azhdar, serif;
+  &:first-of-type {
+    direction: ltr;
+    font-family: azhdar-heavy, serif;
+  }
   font-size: 28px;
+  line-height: 170%;
   margin: 25px;
   text-align: center;
   white-space: pre-line;
+  // &:nth-of-type(3){
+  //   color: darkred;
+  // }
   &:last-of-type {
-    font-size: 20px;
-    direction: rtl;
+    font-size: 24px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: right;
   }
 }
 
@@ -101,6 +109,13 @@ a.checklist {
   }
 }
 
+video {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 100px;
+  width: 90%;
+}
+
 @media (min-width: 450px) {
   div#main_background {
     background-position: center;
@@ -128,9 +143,11 @@ a.checklist {
   }
 
   .main_p {
-    font-size: 43px;
+    font-size: 40px;
     &:last-of-type {
       font-size: 33px;
+      text-align: right;
+      width: 70%;
     }
   }
 
@@ -152,5 +169,9 @@ a.checklist {
     img{
       width: 30%;
     }
+  }
+  
+  video {
+    width: 70%;
   }
 }
