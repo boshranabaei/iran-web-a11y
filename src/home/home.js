@@ -27,6 +27,10 @@ function Home() {
         </div>
 
         <p className="main_p">{strings.HOME_P2_1}</p>
+        <video controls autoPlay muted loop>
+          <source src={'/videos/IWantToUse-c.mp4'} type="video/mp4"/>
+          {strings.VIDEO_NO_SUPPORT}
+        </video>
         <p className="main_p">{strings.HOME_P2_2}</p>
 
         <div className="flex-container">

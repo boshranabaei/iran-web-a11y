@@ -77,8 +77,6 @@ a.checklist {
   // }
   &:last-of-type {
     font-size: 24px;
-    margin-left: auto;
-    margin-right: auto;
     text-align: right;
   }
 }
@@ -113,7 +111,7 @@ a.checklist {
 video {
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 100px;
+  margin-bottom: 80px;
   width: 90%;
 }
 
@@ -147,6 +145,8 @@ video {
     font-size: 40px;
     &:last-of-type {
       font-size: 33px;
+      margin-left: auto;
+      margin-right: auto;
       text-align: right;
       width: 70%;
     }
@@ -173,6 +173,6 @@ video {
   }
   
   video {
-    width: 70%;
+    width: 60%;
   }
 }
