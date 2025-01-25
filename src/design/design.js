@@ -39,6 +39,18 @@ function Design() {
           <h1 className='fade-in'>{strings.DESIGN_TITLE}</h1>
           <p className="design-p1">{strings.DESIGN_P1}</p>
           {items.length > 0 && items.map((item, index)=>  <DesignItem key={index} item={item} designList={designList} />)}
+
+          <div id="download">
+            {strings.DOWNLOAD_DESIGN}<br></br>
+            <a
+              href="../assets/files/dq-designers-checklist.pdf"
+              download="dq-designers-checklist.pdf"
+            >
+              <i class="fa-solid fa-download"></i> {strings.DOWNLOAD} <br></br>
+            </a>
+            <span>{strings.DOWNLOAD_DESIGN_PERM}</span>
+          </div>
+
           <div className="cnstr">
             <p>{strings.CONSTRUCTION}</p>
             <img src="../assets/img/website-construction.png" alt={strings.CONSTRUCTION}></img>

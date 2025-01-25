@@ -39,6 +39,18 @@ function Programming() {
         <h1 className='fade-in'>{strings.PROGRAM_TITLE}</h1>
           <p className="design-p1">{strings.PROGRAM_P1}</p>
           {items.length > 0 && items.map((item, index)=>  <ProgramItem key={index} item={item} programList={programList} />)}
+        
+        <div id="download">
+          {strings.DOWNLOAD_ALL}<br></br>
+          <a
+            href="../assets/files/dq-designers-checklist.pdf"
+            download="dq-designers-checklist.pdf"
+          >
+            <i class="fa-solid fa-download"></i> {strings.DOWNLOAD} <br></br>
+          </a>
+          <span>{strings.DOWNLOAD_ALL_PERM}</span>
+        </div>
+
         <div className="cnstr">
           <p>Check the design section for now</p>
           <p>{strings.CONSTRUCTION}</p>
